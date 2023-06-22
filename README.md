@@ -3,12 +3,13 @@
 # Nama Mahasiswa
 Ghita Najmi Naqasy-22_496466_SV_20961
 
+#
 
 # PENJELASAN
 Mocool Tennis Club
 Mocool adalah sebuah website yang mewadahi bagi para pecinta Tennis untuk nantinya berkumpul, bermain, belajar dan berbagi. Club ini terbuka untuk umum dari semua kalangan yang memiliki hobi dan minat di bidang olahraga Tennis. Pada website ini calon atlet dapat mengetahui informasi yang dibutuhkan seperti jenis program latihan sehingga dapat memilih program yang tepat sesuai kemampuan, jadwal latihan juga informasi mengenai pelatih yang tentunya sudah berpengalaman. Dengan adanya website ini diharapkan dapat membantu masyarakat yang ingin menjadi atlet tenis lapangan atau sekedar ingin menyalurkan hobi.
 
-
+#
 
 # DESIGN RAPI
 Tampilan design pada website ini saya menggunakan color pellete, typography dan spacing yang konsisten juga pemilihan warna pastel yang sering dikaitkan dengan warna kelembutan, ketenangan, juga romantisme.  berikut adalah kode css:
@@ -187,15 +188,15 @@ Kode JavaScript:
                     
                     if (uname.trim() === "") {
                         alert("You have not entered your username!");
-                        return false; // Mencegah pengiriman formulir
+                        return false; 
                     }
                     
                     if (pass.trim() === "") {
                         alert("You have not entered your password!");
-                        return false; // Mencegah pengiriman formulir
+                        return false; 
                     }
                     
-                    return true; // Mengizinkan pengiriman formulir
+                    return true;
                 }  
             </script>
 
