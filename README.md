@@ -13,11 +13,6 @@ Mocool adalah sebuah website yang mewadahi bagi para pecinta Tennis untuk nantin
 # DESIGN RAPI
 Tampilan design pada website ini saya menggunakan color pellete, typography dan spacing yang konsisten juga pemilihan warna pastel yang sering dikaitkan dengan warna kelembutan, ketenangan, juga romantisme.  berikut adalah kode css:
 :root {
-
-  /**
-   * colors
-   */
-
   --ocean: hsl(162, 100%, 91%);
   --raisin-black-1: hsl(244, 17%, 19%);
   --majorelle-blue: hsl(245, 67%, 59%);
@@ -30,10 +25,6 @@ Tampilan design pada website ini saya menggunakan color pellete, typography dan 
   --cool-gray: hsl(244, 17%, 61%);
   --yellow: hsl(65, 100%, 90%);
   --green: hsl(116, 41%, 72%);
-
-  /**
-   * typography
-   */
 
   --ff-quicksand: "Quicksand", sans-serif;
   --ff-mulish: "Mulish", sans-serif;
@@ -50,15 +41,7 @@ Tampilan design pada website ini saya menggunakan color pellete, typography dan 
   --fw-600: 600;
   --fw-700: 700;
 
-  /**
-   * transition
-   */
-
   --transition: 0.25s ease;
-
-  /**
-   * spacing
-   */
 
   --section-padding: 80px;
 
@@ -191,3 +174,57 @@ if(isset($_POST['submit'])){
             </form>
             
 Kode JavaScript:
+<script>
+                function validateForm() {
+                    var uname = document.getElementById("uname").value;
+                    var pass = document.getElementById("pass").value;
+                    
+                    if (uname.trim() === "") {
+                        alert("You have not entered your username!");
+                        return false; // Mencegah pengiriman formulir
+                    }
+                    
+                    if (pass.trim() === "") {
+                        alert("You have not entered your password!");
+                        return false; // Mencegah pengiriman formulir
+                    }
+                    
+                    return true; // Mengizinkan pengiriman formulir
+                }  
+            </script>
+
+        </div>
+    </div>
+</body>
+</html>
+
+Kode JavaScript:
+'use strict';
+
+const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
+const header = document.querySelector("[data-header]");
+
+navToggleBtn.addEventListener("click", function () {
+  header.classList.toggle("active");
+});
+
+<img width="960" alt="ss-back" src="https://github.com/ghitanajminaqasy/UASPPW1_22-496466-SV-20961_MOCOOOL./assets/132932051/8f5603e9-b029-4b6f-9e45-aaa33a2adbb3">
+
+# KONTEN DINAMIS
+Setelah user menginputkan username berserta password akan disimpan ke dalam database.
+<?php
+require 'koneksi.php';
+if(isset($_POST['submit'])){
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    mysqli_query($conn, "INSERT INTO user VALUES('$username','$password')");
+    return mysqli_affected_rows($conn);
+
+    header("Location: login.php");
+    exit();
+
+}
+
+?>
+<img width="503" alt="ss-sign" src="https://github.com/ghitanajminaqasy/UASPPW1_22-496466-SV-20961_MOCOOOL./assets/132932051/5ecdf638-a32d-463b-93f6-a5ee98d30306">
