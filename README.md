@@ -115,6 +115,7 @@ Dengan kode header:
     </div>
   </header>
 
+#
 # DIRECT FEEDBACK
 Sign up form
 User diarakan ke halaman sign up untuk mendaftar apabila berminat menjadi anggota club, pada halaman sign up akan diminta untuk menginputkan username berserta password sehingga adanya interaksi antara pengguna dengan website yang nantinya akan disimpan. 
@@ -217,6 +218,7 @@ navToggleBtn.addEventListener("click", function () {
 
 <img width="960" alt="ss-back" src="https://github.com/ghitanajminaqasy/UASPPW1_22-496466-SV-20961_MOCOOOL./assets/132932051/8f5603e9-b029-4b6f-9e45-aaa33a2adbb3">
 
+#
 # KONTEN DINAMIS
 Setelah user menginputkan username berserta password akan disimpan ke dalam database.
 <?php
