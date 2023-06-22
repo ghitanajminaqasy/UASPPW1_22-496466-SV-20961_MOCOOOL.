@@ -48,6 +48,11 @@ Tampilan design pada website ini saya menggunakan color pellete, typography dan 
 
 }
 
+
+
+
+
+
 ![screencapture-localhost-GNN-index-php-2023-06-22-14_44_31](https://github.com/ghitanajminaqasy/UASPPW1_22-496466-SV-20961_MOCOOOL./assets/132932051/dd070eb0-bcc3-4cb1-85fb-939f6f904468)
 
 # WEB RESPONSIVE
