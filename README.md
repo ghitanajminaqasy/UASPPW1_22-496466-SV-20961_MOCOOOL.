@@ -12,6 +12,7 @@ Mocool adalah sebuah website yang mewadahi bagi para pecinta Tennis untuk nantin
 
 # DESIGN RAPI
 Tampilan design pada website ini saya menggunakan color pellete, typography dan spacing yang konsisten juga pemilihan warna pastel yang sering dikaitkan dengan warna kelembutan, ketenangan, juga romantisme.  berikut adalah kode css:
+
 :root {
   --ocean: hsl(162, 100%, 91%);
   --raisin-black-1: hsl(244, 17%, 19%);
@@ -68,7 +69,7 @@ Dengan kode header:
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo-mocool-1.png" width="150" height="40" alt="Landio logo">
+        <img src="./assets/images/logo-mocool-1.png" width="150" height="40" alt="logo">
       </a>
 
       <button class="menu-toggle-btn" data-nav-toggle-btn>
