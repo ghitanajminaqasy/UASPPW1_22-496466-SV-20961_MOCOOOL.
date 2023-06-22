@@ -74,3 +74,120 @@ Tampilan web responsive pada desktop, handphone dan tablet
 <img width="467" alt="hp" src="https://github.com/ghitanajminaqasy/UASPPW1_22-496466-SV-20961_MOCOOOL./assets/132932051/8181565f-8342-439b-a57e-c0b11e0c5c63">
 
 <img width="464" alt="tablet2" src="https://github.com/ghitanajminaqasy/UASPPW1_22-496466-SV-20961_MOCOOOL./assets/132932051/8f8b8c06-bf15-40fa-beae-07a614b1aa42">
+
+Dengan kode header:
+
+  <!-- 
+    - HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo-mocool-1.png" width="150" height="40" alt="Landio logo">
+      </a>
+
+      <button class="menu-toggle-btn" data-nav-toggle-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#hero" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#features" class="navbar-link">Lapangan</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Daftar</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link">Coach</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <div class="header-actions">
+          <a href="signup.php" class="header-action-link">Sign up</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+# DIRECT FEEDBACK
+Sign up form
+User diarakan ke halaman sign up untuk mendaftar apabila berminat menjadi anggota club, pada halaman sign up akan diminta untuk menginputkan username berserta password sehingga adanya interaksi antara pengguna dengan website yang nantinya akan disimpan. 
+Berikut kode php : <?php
+require 'koneksi.php';
+if(isset($_POST['submit'])){
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    mysqli_query($conn, "INSERT INTO user VALUES('$username','$password')");
+    return mysqli_affected_rows($conn);
+
+    header("Location: login.php");
+    exit();
+
+}
+
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script>
+        var sambutan = alert("Thank you for intending to join us!")
+    </script>
+</head>
+<body style="background-image: url(background-sign-1.jpeg); background-size:cover;">
+    <!-- HEADERS -->
+    <div class="headers">
+        <div class="d-flex sticky-top container-fluid px-0">
+            <div class="dropdown">
+     
+                <script>
+                    var peringatan = document.getElementById("myButton").addEventListener("click", function() {
+                        alert("Sorry, you don't have any access!");
+                    });
+                </script>
+
+            </div>
+            <h1 class="text-center py-3">MOCOOL</h1>
+        </div>
+    </div>
+        
+
+    <!-- Login -->
+    <div class="Logins p-0 m-0">
+        <div class="container p-3 rounded-5">
+            <h3 class="pt-0 m-3 text-white fw-light text-center">Log in</h3>
+            <form action="" method="POST" onsubmit="return validateForm()">
+                <input type="text" name="username" id="uname" placeholder="Username" class="m-3 p-3 py-1 rounded-4 bg-black">
+                <br>
+                <input type="password" name="password" id="pass" placeholder="Password" class="mx-3 mt-3 p-3 py-1 rounded-4 bg-black">
+                <br>
+                <div class="text-center">
+                    <button type="submit" class="mx-3 mt-3 mb-0 p-1 rounded-5 fw-bolder" value="Submit" name="submit">Submit</button>
+                </div>                
+            </form>
+            
+Kode JavaScript:
